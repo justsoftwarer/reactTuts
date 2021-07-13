@@ -20,7 +20,7 @@ export default function ProductList() {
         <Table.HeaderCell>Birim Fiyatı</Table.HeaderCell>
         <Table.HeaderCell>Stok Adedi</Table.HeaderCell>
         <Table.HeaderCell>Açıklama</Table.HeaderCell>
-        <Table.HeaderCell>Kategori</Table.HeaderCell>
+        <Table.HeaderCell>Kategory</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
 
