@@ -3,6 +3,9 @@ import Categories from './Categories'
 import Navi from './Navi'
 import ProductList from '../pages/ProductList'
 import { Grid, GridColumn } from 'semantic-ui-react'
+import { Route } from 'react-router-dom'
+import ProductDetails from '../pages/ProductDetails'
+import CartDetail from '../pages/CartDetail'
 
 export default function Dashboard() {
     return (
@@ -13,7 +16,10 @@ export default function Dashboard() {
                         <Categories />
                     </Grid.Column>
                     <GridColumn width={12}>
-                        <ProductList />
+                        <Route exact path="/" component={ProductList} />
+                        <Route exact path="/products" component={ProductList} />
+                        <Route path="/products/:name" component={ProductDetails} />
+                        <Route exact path="/cart" component={CartDetail} />
                     </GridColumn>
                 </Grid.Row>
             </Grid>
